@@ -32,3 +32,60 @@
              placeholder="Select your grade"
              required/>
     </div>
+
+
+
+<div class="form-group">
+      <p> Which of the following best describes you? </p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disable selected value>Select an option</option>
+        <option value="parent">Parent</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How would you describe your overall experience with virtual learning?</p>
+      <label>
+        <input name="rate-experience" value="excellent" type="radio" class="input-radio" checked />Excellent</label>
+      <label>
+        <input name="rate-experience" value="good" type="radio" class="input-radio" />Good</label>
+      <label>
+        <input name="rate-experience" value="okay" type="radio" class="input-radio" />Okay</label>
+      <label>
+        <input name="rate-experience" value="below-average" type="radio" class="input-radio" />Below average</label>
+      <label>
+        <input name="rate-experience" value="poor" type="radio" class="input-radio" />Poor</label>
+      <div class="form-group">
+        <p>What have been the biggest challenges of virtual learning?
+        <p>
+          <label>
+            <input name="select-challenges" value="access" type="checkbox" class="input-checkbox" />Access to technology</label>
+
+          <label>
+            <input name="select-challenges" value="communication" type="checkbox" class="input-checkbox" />Communicating with others</label>
+          <label>
+            <input name="select-challenges" value="engagement" type="checkbox" class="ipnut-checkbox" />Lack of engagement/motivation</label>
+          <label>
+            <input name="select-challenges" value="workload" type="checkbox" class="input-checkbox" />Managing workload</label>
+          <label>
+            <input name="select-challenges" value="navigating" type="checkbox" class="input-checkbox" />Navigating online platforms</label>
+        <div class="form-group">
+          <p> How much time do you spend each day doing online school? </p>
+          <select id="dropdown" name="time" class="form-control" required>
+            <option disable selected value>Select an option</option>
+            <option value="low">1-2 hours</option>
+            <option value="medium">3-4 hours</option>
+            <option value="high">5+ hours</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Any additional comments or feedback?
+          </p>
+          <textarea id="feedback" class="input-textarea" name="feedback" placeholder="Enter your comment/message here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>

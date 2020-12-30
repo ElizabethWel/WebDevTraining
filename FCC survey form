@@ -82,25 +82,35 @@
         
         
 <!-- CSS SECTION -->
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
+/* Adds a box around the survey*/
 @media (min-width: 480px) {
   form {
     padding: 2.5rem;
-    background-color: #85997a;
+    background-color: rgba(133, 153, 122, .75);
+    position: absolute;  
+    left: 20%;
+ /* left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)*/
   }
 }
+/* alters text of h1*/
 h1{
   font-family: 'Raleway';
   font-size: 3rem;
   text-align: center;
   color: #ffffff;
 }
+/* alters "check all that apply"*/
 .help{
   font-size: 15px;
   font-style: italic;
 }
+/* alters text of subheading*/
 #description{
   font-family: 'Nunito';
   font-size: 1.25rem;
@@ -108,13 +118,15 @@ h1{
   text-align: center;
   color: #ffffff;
 }
+/* alters spacing of certain text*/
 .form-group{
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
 }
+/* alters shape of input boxes*/
 .form-control{
   display: block;
-  width: 800px;
+  width: 700px;
   height: 2rem;
   padding: 0.5rem .5rem;
   color: #495057;
@@ -123,50 +135,82 @@ h1{
   border: 1px solid #cccccc;
   border-radius: 0.25rem;
 }
+/* adds a background image and a colour gradient*/
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  
+  background-image: linear-gradient(
+      150deg,
+      rgba(153, 153, 100, 0.8),
+      rgba(230, 153, 64, 0.7)
+    ),
+    url(https://upload.wikimedia.org/wikipedia/commons/5/55/School_Classroom_seating_arrangements_during_the_time_of_covid_19_UAE.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* alters fonts of certain text*/
 p {
   font-size: 18px;
   color: #ffffff;
 }
+/* alters all label fonts*/
 label{
   font-size: 18px;
   color: #ffffff;
 }
+/* alters all placeholder text*/
 ::placeholder{
   font-family: 'Nunito';
 }
+/* alters dropdown menus*/
 #dropdown{
   font-family: 'Nunito';
   height: 100%;
-  width: 820px;
+  width: 720px;
 }
+/* alters text of all elements*/
 body {
   font-family: 'Nunito';
   font-size: 1rem;
   background-color: #c2c2a3
 }
+/* alters display of checkboxes*/
 .input-checkbox {
   display: inline-block;
   margin-right: 0.635rem;
-  min-height: 1.25rem;
+  min-height: 1.15rem;
   min-width: 1.25rem;
 }
+/* stacks checkboxes and radio inputs*/
 label{
   display: block;
 }
+/* alters text box and submit button*/
 #feedback{
-  width: 600px;
+  width: 100%;
   height: 80px;
 }
+/* alters submit button*/
 #submit{
+  display: block;
   font-family: 'Nunito';
   font-size: 20px;
-  font-color: #ffffff;
-  width: 600px;
+  color: #ffffff;
+  width: 100%;
   height: 40px;
-  background-color:#ffcc99;
-  border-width: 1px;
-  border-color: #663300;
+  background-color:#ff8566;
+  border-color: #ff8566;
+  border-radius: 3px;
 }
 #submit:hover{
-  background-color: #ffe6cc;
+  background-color: #ffad99;
+  border-color: #ffad99;
+  cursor: pointer;
 }

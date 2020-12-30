@@ -1,3 +1,5 @@
+<!-- HTML SECTION -->
+
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <div class="container">
@@ -8,34 +10,18 @@
   <form id="survery-form">
     <div class="form-group">
       <label id="name-label" for="name">Name</label>
-      <input type="text"
-             name="name"
-             id="name"
-             class="form-control"
-             placeholder="Enter your name"
-             required/>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
     </div>
     <div class="form-group">
-      <label id="email-label" for="email"> Email</label>
-      <input type="email"
-             name="email"
-             id="email"
-             placeholder="Enter your school email"
-             required/>
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
     </div>
-    <div class="form-group"> 
+    <div class="form-group">
       <label id="number-label" for="number">Grade</label>
-      <input type="number"
-             name="grade" 
-             id="number"
-             class="form-control"
-             placeholder="Select your grade"
-             required/>
+      <input type="number" name="grade" id="number" min="6" max="12"class="form-control" placeholder="Select your grade" required />
     </div>
 
-
-
-<div class="form-group">
+    <div class="form-group">
       <p> Which of the following best describes you? </p>
       <select id="dropdown" name="role" class="form-control" required>
         <option disable selected value>Select an option</option>
@@ -59,6 +45,7 @@
         <input name="rate-experience" value="poor" type="radio" class="input-radio" />Poor</label>
       <div class="form-group">
         <p>What have been the biggest challenges of virtual learning?
+          <span class="help">(Check all that apply)</span>
         <p>
           <label>
             <input name="select-challenges" value="access" type="checkbox" class="input-checkbox" />Access to technology</label>
@@ -66,7 +53,7 @@
           <label>
             <input name="select-challenges" value="communication" type="checkbox" class="input-checkbox" />Communicating with others</label>
           <label>
-            <input name="select-challenges" value="engagement" type="checkbox" class="ipnut-checkbox" />Lack of engagement/motivation</label>
+            <input name="select-challenges" value="engagement" type="checkbox" class="input-checkbox" />Lack of engagement/motivation</label>
           <label>
             <input name="select-challenges" value="workload" type="checkbox" class="input-checkbox" />Managing workload</label>
           <label>
@@ -89,3 +76,97 @@
         <div class="form-group">
           <button type="submit" id="submit" class="submit-button">Submit</button>
         </div>
+        
+        
+        
+        
+        
+<!-- CSS SECTION -->
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+    background-color: #85997a;
+  }
+}
+h1{
+  font-family: 'Raleway';
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+.help{
+  font-size: 15px;
+  font-style: italic;
+}
+#description{
+  font-family: 'Nunito';
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+}
+.form-group{
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-control{
+  display: block;
+  width: 800px;
+  height: 2rem;
+  padding: 0.5rem .5rem;
+  color: #495057;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+}
+p {
+  font-size: 18px;
+  color: #ffffff;
+}
+label{
+  font-size: 18px;
+  color: #ffffff;
+}
+::placeholder{
+  font-family: 'Nunito';
+}
+#dropdown{
+  font-family: 'Nunito';
+  height: 100%;
+  width: 820px;
+}
+body {
+  font-family: 'Nunito';
+  font-size: 1rem;
+  background-color: #c2c2a3
+}
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.635rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+label{
+  display: block;
+}
+#feedback{
+  width: 600px;
+  height: 80px;
+}
+#submit{
+  font-family: 'Nunito';
+  font-size: 20px;
+  font-color: #ffffff;
+  width: 600px;
+  height: 40px;
+  background-color:#ffcc99;
+  border-width: 1px;
+  border-color: #663300;
+}
+#submit:hover{
+  background-color: #ffe6cc;
+}
